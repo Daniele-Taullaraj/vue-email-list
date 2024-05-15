@@ -1,0 +1,2 @@
+CONSEGNA
+-creata funzione che genera 10 email diverse, le righe commentate sono un metodo in piu per eseguire la stessa funzione solo che è ripetitivo,perciò ho preferito creare una funzione apposta che mi da come ritorno l'email dall'API che poi riutilizzerò in "controllaEmailUnica"
