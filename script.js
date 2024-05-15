@@ -6,6 +6,7 @@ createApp({
     data() {
         return {
             listaEmail: [],
+            conteggioLista: 0,
         }
     },
 
@@ -29,16 +30,13 @@ createApp({
                 this.richiamoAxios().then((emailGenerata) => {
                     if (!this.listaEmail.includes(emailGenerata)) {
                         this.listaEmail.push(emailGenerata);
+                        this.conteggioLista++;
                     }
                 });
             }
-        }
-
-
+        },
     },
     mounted() {
-        this.creaListaEmail();
-        // this.richiamoAxios();
     }
 
 }).mount('#app')

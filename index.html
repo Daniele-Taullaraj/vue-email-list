@@ -15,8 +15,9 @@
     <div id="app">
         <h1>LISTA EMAIL</h1>
         <ul>
-            <li v-for="elemento in listaEmail">{{elemento}}</li>
+            <li v-for="elemento in listaEmail" v-if="conteggioLista==10">{{elemento}}</li>
         </ul>
+        <button @click="creaListaEmail()">Genera Email</button>
 
     </div>
 
